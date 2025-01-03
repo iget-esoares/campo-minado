@@ -13,6 +13,7 @@ body {
 }
 
 .window {
+    width: calc((24px * 9) + 8px);
     border-top: 4px solid white;
     border-left: 4px solid white;
     border-right: 4px solid #808080;
@@ -34,24 +35,36 @@ body {
 .game header .reset-game {
     background: #b3b3b3;
     border-radius: 0;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
-    border-right: 3px solid #808080;
-    border-bottom: 3px solid #808080;
-    width: 34px;
-    height: 34px;
+    border: 0;
+    background-image: url('img/button.bmp');
+    background-size: 32px;
+    background-position-y: -128px;
+    width: 32px;
+    height: 32px;
+}
+
+.game header .reset-game.win {
+    background-position-y: -32px;
+}
+
+.game header .reset-game.dead {
+    background-position-y: -64px;
+}
+
+.game header .reset-game.surprise {
+    background-position-y: -96px;
 }
 
 .game header .reset-game:active {
-    border: none;
+    background-position-y: 0;
 }
 
 .game .display {
     background: #000;
-    font-size: 32px;
+    font-size: 28px;
     font-family: 'DSEG7';
     color: #FF0000;
-    padding: 2px 0px;
+    padding: 2px 0;
 }
 
 .game .display .off {
@@ -74,44 +87,64 @@ body {
 }
 
 .game main .row div {
-    font-size: 16px;
+    background-image: url('img/cell.bmp');
+    background-size: 24px;
     width: 24px;
-    line-height: 24px;
-    text-align: center;
-    border-top: 3px solid white;
-    border-left: 3px solid white;
-    border-right: 3px solid #808080;
-    border-bottom: 3px solid #808080;
+    height: 24px;
+}
+
+.game main .row div:not([class]):active {
+    background-position-y: calc(-24px* 15);
 }
 
 .game main .row div.one {
-    color: blue;
+    background-position-y: calc(-24px* 14);
 }
 
 .game main .row div.two {
-    color: #008000;
+    background-position-y: calc(-24px* 13);
 }
 
 .game main .row div.three {
-    color: red;
+    background-position-y: calc(-24px* 12);
 }
 
 .game main .row div.four {
-    color: #000080;
+    background-position-y: calc(-24px* 11);
 }
 
 .game main .row div.five {
-    color: #800000;
+    background-position-y: calc(-24px* 10);
 }
 
 .game main .row div.six {
-    color: black;
+    background-position-y: calc(-24px* 9);
 }
 
 .game main .row div.seven {
-    color: black;
+    background-position-y: calc(-24px* 8);
 }
 
 .game main .row div.eight {
-    color: black;
+    background-position-y: calc(-24px* 7);
+}
+
+.game main .row div.question:active {
+    background-position-y: calc(-24px* 6);
+}
+
+.game main .row div.mine {
+    background-position-y: calc(-24px* 5);
+}
+
+.game main .row div.mine-pressed {
+    background-position-y: calc(-24px* 3);
+}
+
+.game main .row div.question {
+    background-position-y: calc(-24px* 2);
+}
+
+.game main .row div.flag {
+    background-position-y: calc(-24px* 1);
 }
