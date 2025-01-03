@@ -1,0 +1,117 @@
+@font-face {
+    font-family: 'Minesweeper';
+    src: url("minesweeper.ttf") format('truetype');
+}
+
+@font-face {
+    font-family: 'DSEG7';
+    src: url("DSEG7Classic-Bold.ttf") format('truetype');
+}
+
+body {
+    background: #d0d0d0;
+}
+
+.window {
+    border-top: 4px solid white;
+    border-left: 4px solid white;
+    border-right: 4px solid #808080;
+    border-bottom: 4px solid #808080;
+    padding: 8px;
+}
+
+.game header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 4px solid #808080;
+    border-left: 4px solid #808080;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    padding: 8px;
+}
+
+.game header .reset-game {
+    background: #b3b3b3;
+    border-radius: 0;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid #808080;
+    border-bottom: 3px solid #808080;
+    width: 34px;
+    height: 34px;
+}
+
+.game header .reset-game:active {
+    border: none;
+}
+
+.game .display {
+    background: #000;
+    font-size: 32px;
+    font-family: 'DSEG7';
+    color: #FF0000;
+    padding: 2px 0px;
+}
+
+.game .display .off {
+    color: #FF0000;
+    position: absolute;
+    opacity: 0.3;
+}
+
+.game main {
+    font-family: 'Minesweeper';
+    border-top: 4px solid #808080;
+    border-left: 4px solid #808080;
+    border-right: 4px solid white;
+    border-bottom: 4px solid white;
+    margin-top: 8px;
+}
+
+.game main .row {
+    display: flex;
+}
+
+.game main .row div {
+    font-size: 16px;
+    width: 24px;
+    line-height: 24px;
+    text-align: center;
+    border-top: 3px solid white;
+    border-left: 3px solid white;
+    border-right: 3px solid #808080;
+    border-bottom: 3px solid #808080;
+}
+
+.game main .row div.one {
+    color: blue;
+}
+
+.game main .row div.two {
+    color: #008000;
+}
+
+.game main .row div.three {
+    color: red;
+}
+
+.game main .row div.four {
+    color: #000080;
+}
+
+.game main .row div.five {
+    color: #800000;
+}
+
+.game main .row div.six {
+    color: black;
+}
+
+.game main .row div.seven {
+    color: black;
+}
+
+.game main .row div.eight {
+    color: black;
+}
