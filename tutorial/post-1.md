@@ -37,3 +37,4 @@ O que acham? Topam acompanhar e participar deste projeto?
   c. Uma carinha morta se uma mina for explodida
   d. Uma carinha de oculos escuro se o jogador ganhar a partida
 * Clicar no botão central reinicia o jogo
+* O primeiro clique no tabuleiro nunca deve conter uma bomba
