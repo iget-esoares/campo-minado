@@ -33,7 +33,7 @@ A estrutura HTML do jogo é relativamente simples:
                 <div class="mine-pressed"></div>
                 <div class="question"></div>
                 <div class="flag"></div>
-                <div></div>
+                <div class="empty"></div>
                 <div></div>
                 <div></div>
                 <div></div>

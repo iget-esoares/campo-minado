@@ -93,7 +93,8 @@ body {
     height: 24px;
 }
 
-.game main .row div:not([class]):active {
+.game main .row div:not([class]):active,
+.game main .row div.empty {
     background-position-y: calc(-24px* 15);
 }
 
