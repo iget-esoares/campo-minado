@@ -50,7 +50,14 @@ O CSS é basico porém um pouco extenso, por este motivo vou apenas colocar o li
 Eu consegui extrair do executável original os sprites que renderizavam o botão da carinha e as posições do tabuleiro,
 então nestes itens, é utilizado um background com background position diferente para cada variação.
 
-https://github.com/iget-esoares/campo-minado/blob/main/minesweeper.css
+O CSS completo pode ser visualizado (aqui)[https://github.com/iget-esoares/campo-minado/blob/b748e1c97211849d29a1ebeb40d17653c0215c88/minesweeper.css].
+
+## Resultado
+
+O resultado do nosso HTML/CSS combinados é:
+
+<img src="https://i.ibb.co/ZXBzRqz/Captura-de-tela-de-2025-01-05-10-34-27.png" alt="Captura-de-tela-de-2025-01-05-10-34-27" border="0">
+
 
 # Próximos passos
 
